@@ -1,0 +1,63 @@
+/* Селектор по тегу или селектор элемента */
+p {
+    background-color: green;
+    width: 500px;
+}
+
+/* Селектор по id */
+#paragraph {
+    /* граница элемента */
+    /* 
+    border: ширина_линии тип_линии цвет_линии типы_линий:
+    solid - сплошная линия 
+    dotted - линия из точек
+    dashed - пунктирная линия
+    */
+    border: 2px solid red;
+}
+
+/* Селектор по классу */
+.text {
+    /* Внутренние отступы элемента 
+    padding-top - верхний отступ элемента
+    padding-rigth - правый отступ элемента
+    padding-bottom - нижний отступ элемента
+    padding-left - левый отступ элемента
+    */
+    padding: 10px;
+}
+
+/* Селектор по атрибуту */
+[href] {
+    color: orange;
+}
+
+/* Мультиселектор */
+/* Применить указанные свойства для нескольких селекторов */
+.block-link,
+.img-wrap {
+    border: 2px dashed green;
+    width: 300px;
+    /* margin - внешний отступ элемента */
+    /* Внешний отступы элемента 
+    margin-top - верхний внешний отступ элемента
+    margin-rigth - правый внешний отступ элемента
+    margin-bottom - нижний внешний отступ элемента
+    margin-left - левый внешний отступ элемента
+    */
+    margin: 10px;
+}
+
+.btn {
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    /* Скруглить углы элемента */
+    border-radius: 5px;
+}
+
+/* Свойства применятся если у элемента будут все указанные селекторы */
+.btn.active {
+    background-color: green;
+    color: white;
+}
